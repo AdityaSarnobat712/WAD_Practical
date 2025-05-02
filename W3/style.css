@@ -1,0 +1,25 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f7fafc, #edf2f7);
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.header-bg {
+    background: url('https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center;
+    background-size: cover;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+@media (max-width: 640px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}

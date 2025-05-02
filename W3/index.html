@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Delights - Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-bg text-white text-center py-16 relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">ABC Delights - Restaurant Menu</h1>
+            <p class="text-lg md:text-xl">Savor the Flavors of Our Culinary Creations</p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-12">
+        <section class="intro mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-semibold text-red-800 mb-4">Welcome to ABC Delights</h2>
+            <p class="text-gray-700 leading-relaxed">
+                At ABC Delights, we craft unforgettable dining experiences with a fusion of tradition and innovation. Our chef, with over two decades of mastery, uses only the freshest, locally-sourced ingredients. We guarantee exceptional quality and flavors in every dish, ensuring a delightful culinary journey.
+            </p>
+        </section>
+
+        <section class="top-dishes mb-12" data-aos="fade-right">
+            <h2 class="text-3xl font-semibold text-red-800 mb-4">Top Dishes by Popularity</h2>
+            <ol class="list-decimal list-inside text-gray-800 space-y-2">
+                <li>Paneer Tikka - Creamy, spiced paneer skewers</li>
+                <li>Biryani - Aromatic rice with tender meat or veggies</li>
+                <li>Margherita Pizza - Classic Italian with fresh basil</li>
+                <li>Hakka Noodles - Stir-fried with vibrant vegetables</li>
+            </ol>
+        </section>
+
+        <section class="cuisines mb-12" data-aos="fade-left">
+            <h2 class="text-3xl font-semibold text-red-800 mb-4">Available Cuisines</h2>
+            <ul class="list-disc list-inside text-gray-800 space-y-2">
+                <li>Italian</li>
+                <li>Indian</li>
+                <li>Chinese</li>
+            </ul>
+        </section>
+
+        <section class="menu" data-aos="fade-up">
+            <h2 class="text-3xl font-semibold text-red-800 mb-6">Menu</h2>
+            <div class="menu-grid">
+                <div class="card bg-white rounded-lg shadow-lg p-6" data-aos="zoom-in">
+                    <img src="download (1).jpeg" alt="Paneer Tikka" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Paneer Tikka</h3>
+                    <p class="text-gray-600 mb-2">Grilled paneer cubes marinated in spiced yogurt</p>
+                    <p class="text-red-600 font-semibold">₹250</p>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg p-6" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="download.jpeg" alt="Biryani" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Biryani</h3>
+                    <p class="text-gray-600 mb-2">Fragrant rice layered with spiced meat or vegetables</p>
+                    <p class="text-red-600 font-semibold">₹300</p>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg p-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="download (2).jpeg" alt="Margherita Pizza" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Margherita Pizza</h3>
+                    <p class="text-gray-600 mb-2">Classic pizza with tomato, mozzarella, and basil</p>
+                    <p class="text-red-600 font-semibold">₹350</p>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg p-6" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="download (3).jpeg" alt="Hakka Noodles" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Hakka Noodles</h3>
+                    <p class="text-gray-600 mb-2">Stir-fried noodles with veggies and soy sauce</p>
+                    <p class="text-red-600 font-semibold">₹200</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-red-800 text-white text-center py-6">
+        <p>© 2025 ABC Delights. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
