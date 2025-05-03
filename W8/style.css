@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+.form-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+}
+.btn-submit {
+    background-color: #28a745;
+    border: none;
+}
+.btn-submit:hover {
+    background-color: #218838;
+}
+.form-floating .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
