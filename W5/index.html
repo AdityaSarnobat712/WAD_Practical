@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Product Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">ShopEasy - Product Listing</h1>
+            <p class="lead">Discover the Best Products at Unbeatable Prices</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row mb-4">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="dropdown filter-dropdown">
+                    <button class="btn btn-primary dropdown-toggle w-100" type="button" id="categoryFilter" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filter by Category
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoryFilter">
+                        <li><a class="dropdown-item" href="#" data-category="all">All Categories</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="electronics">Electronics</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="clothing">Clothing</a></li>
+                        <li><a class="dropdown-item" href="#" data-category="home">Home & Kitchen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="productGrid">
+            <div class="col" data-category="electronics">
+                <div class="card product-card h-100">
+                    <img src="download.jpg" class="card-img-top product-img" alt="Smartphone">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone Pro</h5>
+                        <p class="card-text">Latest 5G smartphone with 128GB storage and 48MP camera.</p>
+                        <p class="fw-bold text-primary">₹29,999</p>
+                        <button class="btn btn-outline-primary w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-category="clothing">
+                <div class="card product-card h-100">
+                    <img src="download (2).jpg" class="card-img-top product-img" alt="Denim Jacket">
+                    <div class="card-body">
+                        <h5 class="card-title">Denim Jacket</h5>
+                        <p class="card-text">Stylish blue denim jacket, perfect for casual wear.</p>
+                        <p class="fw-bold text-primary">₹2,499</p>
+                        <button class="btn btn-outline-primary w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-category="home">
+                <div class="card product-card h-100">
+                    <img src="download (1).jpg" class="card-img-top product-imgjournals" alt="Air Fryer">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Fryer</h5>
+                        <p class="card-text">Healthy cooking with 5L capacity and digital controls.</p>
+                        <p class="fw-bold text-primary">₹7,999</p>
+                        <button class="btn btn-outline-primary w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-category="electronics">
+                <div class="card product-card h-100">
+                    <img src="download.png" class="card-img-top product-img" alt="Wireless Earphones">
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Earphones</h5>
+                        <p class="card-text">True wireless earphones with noise cancellation.</p>
+                        <p class="fw-bold text-primary">₹4,999</p>
+                        <button class="btn btn-outline-primary w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-category="clothing">
+                <div class="card product-card h-100">
+                    <img src="download (3).jpg" class="card-img-top product-img" alt="Sneakers">
+                    <div class="card-body">
+                        <h5 class="card-title">Sports Sneakers</h5>
+                        <p class="card-text">Comfortable sneakers for running and workouts.</p>
+                        <p class="fw-bold text-primary">₹3,799</p>
+                        <button class="btn btn-outline-primary w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-category="home">
+                <div class="card product-card h-100">
+                    <img src="download (4).jpg" class="card-img-top product-img" alt="Coffee Maker">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee Maker</h5>
+                        <p class="card-text">Automatic coffee maker with programmable settings.</p>
+                        <p class="fw-bold text-primary">₹5,499</p>
+                        <button class="btn btn-outline-primary w-100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const category = this.getAttribute('data-category');
+                const products = document.querySelectorAll('#productGrid .col');
+                
+                products.forEach(product => {
+                    if (category === 'all' || product.getAttribute('data-category') === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
