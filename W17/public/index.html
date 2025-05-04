@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Directory</title>
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Employee Directory</h1>
+  <div class="row" id="employees"></div>
+
+  <script>
+    // Fetch employee data from the API
+    fetch('/employees')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const employeesDiv = document.getElementById('employees');
+        data.forEach(employee => {
+          const column = document.createElement('div');
+          column.className = 'column';
+          const card = document.createElement('div');
+          card.className = 'card';
+          const img = document.createElement('img');
+          img.src = employee.profileImage;
+          img.alt = employee.name;
+          img.className = 'profile-image';
+          const container = document.createElement('div');
+          container.className = 'container';
+          container.innerHTML = `
+            <h2>${employee.name}</h2>
+            <p class="title">${employee.designation}</p>
+            <p>${employee.department}</p>
+            <p>Salary: ${employee.salary}</p>
+          `;
+          card.appendChild(img);
+          card.appendChild(container);
+          column.appendChild(card);
+          employeesDiv.appendChild(column);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching employees:', error);
+        document.getElementById('employees').innerText = 'Failed to load employees';
+      });
+  </script>
+</body>
+</html>
