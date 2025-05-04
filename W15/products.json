@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Wireless Headphones",
+      "price": "₹7,999",
+      "image": "headphones.jpg"
+    },
+    {
+      "name": "Smartwatch",
+      "price": "₹12,999",
+      "image": "smartwatch.jpg"
+    },
+    {
+      "name": "Gaming Mouse",
+      "price": "₹2,499",
+      "image": "mouse.jpg"
+    }
+  ]
+  
