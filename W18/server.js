@@ -85,3 +85,21 @@ app.get('/update/:name', async (req, res) => {
 });
 
 app.listen(3000, () => console.log('Server running at http://localhost:3000'));
+
+/*
+Insert sample data: Visit http://localhost:3000/insert (only once)
+
+View all songs: http://localhost:3000/
+
+Filter by Music Director: http://localhost:3000/director/GHI
+
+Filter by Director & Singer: http://localhost:3000/director/GHI/singer/JKL
+
+Delete a song: http://localhost:3000/delete/ABC
+
+Add new song: http://localhost:3000/add
+
+Filter by singer and film: http://localhost:3000/filter/JKL/DEF
+
+Update actor/actress: http://localhost:3000/update/ABC
+*/
