@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .poster {
+      width: 100%;
+      max-width: 250px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+    .movie-info {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>Top Movie Reviews</h1>
+  </div>
+
+  <div data-role="content">
+    <p>Browse reviews of some of the most talked-about movies!</p>
+    <ul data-role="listview">
+      <li><a href="#movie1">Inception</a></li>
+      <li><a href="#movie2">The Shawshank Redemption</a></li>
+      <li><a href="#movie3">Interstellar</a></li>
+      <li><a href="#movie4">Parasite</a></li>
+      <li><a href="#movie5">Joker</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Movie 1 -->
+<div data-role="page" id="movie1">
+  <div data-role="header">
+    <h1>Inception</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/51zUbui+gbL._AC_SY445_.jpg" class="poster" alt="Inception Poster">
+    <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+    <p><strong>Summary:</strong> A skilled thief is offered a chance to have his past crimes erased by planting an idea into a target's subconscious.</p>
+    <p><strong>Review:</strong> A mind-bending journey through layered dreams with stunning visuals and a gripping plot. Nolan’s masterpiece keeps you thinking long after the credits roll.</p>
+  </div>
+</div>
+
+<!-- Movie 2 -->
+<div data-role="page" id="movie2">
+  <div data-role="header">
+    <h1>Shawshank Redemption</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg" class="poster" alt="Shawshank Poster">
+    <p><strong>Genre:</strong> Drama, Crime</p>
+    <p><strong>Summary:</strong> An innocent man, imprisoned for murder, finds hope and purpose behind bars through friendship and perseverance.</p>
+    <p><strong>Review:</strong> A heartwarming and inspiring story of resilience, friendship, and hope. It stands as one of the most powerful dramas in cinema history.</p>
+  </div>
+</div>
+
+<!-- Movie 3 -->
+<div data-role="page" id="movie3">
+  <div data-role="header">
+    <h1>Interstellar</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SL1178_.jpg" class="poster" alt="Interstellar Poster">
+    <p><strong>Genre:</strong> Sci-Fi, Adventure</p>
+    <p><strong>Summary:</strong> A team of explorers travels through a wormhole in space in an attempt to save humanity.</p>
+    <p><strong>Review:</strong> A breathtaking exploration of space, time, and emotion. With dazzling visuals and a deep emotional core, it's a must-watch.</p>
+  </div>
+</div>
+
+<!-- Movie 4 -->
+<div data-role="page" id="movie4">
+  <div data-role="header">
+    <h1>Parasite</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/91yLXMWvGGL._AC_SL1500_.jpg" class="poster" alt="Parasite Poster">
+    <p><strong>Genre:</strong> Thriller, Drama</p>
+    <p><strong>Summary:</strong> A poor family schemes to become employed by a wealthy family by infiltrating their household one by one.</p>
+    <p><strong>Review:</strong> A masterful social commentary wrapped in suspense. Bong Joon-ho crafts a gripping, unpredictable, and layered story that stays with you.</p>
+  </div>
+</div>
+
+<!-- Movie 5 -->
+<div data-role="page" id="movie5">
+  <div data-role="header">
+    <h1>Joker</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+  <div data-role="content">
+    <img src="https://m.media-amazon.com/images/I/81U9C8pUUiL._AC_SL1500_.jpg" class="poster" alt="Joker Poster">
+    <p><strong>Genre:</strong> Drama, Psychological Thriller</p>
+    <p><strong>Summary:</strong> Arthur Fleck, a failed comedian, descends into madness and transforms into the criminal mastermind known as the Joker.</p>
+    <p><strong>Review:</strong> Joaquin Phoenix delivers a haunting and powerful performance in this dark, disturbing look at mental illness and society.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CSS and JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .profile-img {
+      width: 120px;
+      border-radius: 50%;
+      margin: 10px auto;
+      display: block;
+    }
+    .project-img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: #0078d4;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      margin: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home / About Me Page -->
+<div data-role="page" id="about">
+  <div data-role="header">
+    <h1>About Me</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#about" class="ui-btn-active">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div data-role="content">
+    <img src="IMG_20240620_083809.jpg" alt="Profile Picture" class="profile-img">
+    <h2>Hello, I'm Aditya Sarnobat</h2>
+    <p>I am a passionate web developer and software engineer with experience in building responsive websites, mobile-friendly apps, and data-driven backend systems. I love solving problems through code and creating seamless user experiences.</p>
+  </div>
+</div>
+
+<!-- Projects Page -->
+<div data-role="page" id="projects">
+  <div data-role="header">
+    <h1>Projects</h1>
+    <a href="#about" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <h2>Portfolio Website</h2>
+    <img src="https://via.placeholder.com/400x200.png?text=Portfolio+Website" class="project-img" alt="Portfolio">
+    <p>A responsive personal website built using HTML, CSS, and JavaScript.</p>
+
+    <h2>Task Manager App</h2>
+    <img src="https://via.placeholder.com/400x200.png?text=Task+Manager+App" class="project-img" alt="Task Manager">
+    <p>Task tracking app with login system and database integration using React & Firebase.</p>
+
+    <h2>Weather App</h2>
+    <img src="https://via.placeholder.com/400x200.png?text=Weather+App" class="project-img" alt="Weather App">
+    <p>Real-time weather information using OpenWeatherMap API and dynamic UI.</p>
+  </div>
+</div>
+
+<!-- Skills Page -->
+<div data-role="page" id="skills">
+  <div data-role="header">
+    <h1>Skills</h1>
+    <a href="#about" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <div class="skill-tag">HTML</div>
+    <div class="skill-tag">CSS</div>
+    <div class="skill-tag">JavaScript</div>
+    <div class="skill-tag">React</div>
+    <div class="skill-tag">Node.js</div>
+    <div class="skill-tag">MongoDB</div>
+    <div class="skill-tag">Python</div>
+    <div class="skill-tag">Git</div>
+    <div class="skill-tag">SQL</div>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact Me</h1>
+    <a href="#about" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div data-role="content">
+    <p><strong>Email:</strong> johndoe@example.com</p>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Location:</strong> Pune, Maharashtra, India</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+  </div>
+</div>
+
+</body>
+</html>
