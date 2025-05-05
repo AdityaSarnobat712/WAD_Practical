@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PICT Pune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery Mobile CSS & JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .section-title {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>PICT Pune</h1>
+  </div>
+
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#about" data-transition="fade">About Us</a></li>
+      <li><a href="#courses" data-transition="fade">Courses</a></li>
+      <li><a href="#departments" data-transition="fade">Departments</a></li>
+      <li><a href="#contact" data-transition="fade">Contact</a></li>
+    </ul>
+  </div>
+
+  <div role="main" class="ui-content">
+    <h2>Welcome to PICT!</h2>
+    <p>One of India's premier engineering institutes, PICT is renowned for its academic excellence and innovation in technology.</p>
+    <img src="download.jpg" alt="PICT Campus" class="content-img">
+  </div>
+</div>
+
+<!-- About Us -->
+<div data-role="page" id="about">
+  <div data-role="header">
+    <h1>About PICT</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p>Founded in 1983, Pune Institute of Computer Technology (PICT) has been a beacon of excellence in engineering education, especially in the fields of Computer Engineering, IT, and E&TC.</p>
+
+    <p>PICT offers a strong academic curriculum, a thriving research culture, and state-of-the-art infrastructure. Our students consistently perform well in academics, placements, and technical competitions.</p>
+
+    <img src="download (1).jpg" alt="PICT Infrastructure" class="content-img">
+
+    <p class="section-title">Why Choose PICT?</p>
+    <ul>
+      <li>Top-tier faculty and academic excellence</li>
+      <li>100% placement assistance</li>
+      <li>Strong industry-academia collaboration</li>
+      <li>Modern labs and research centers</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Courses -->
+<div data-role="page" id="courses">
+  <div data-role="header">
+    <h1>Courses Offered</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div role="main" class="ui-content">
+
+    <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+      <h4>Undergraduate Programs (B.E)</h4>
+      <ul>
+        <li>Computer Engineering - 240 seats</li>
+        <li>Information Technology - 180 seats</li>
+        <li>Electronics & Telecommunication - 240 seats</li>
+      </ul>
+    </div>
+
+    <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+      <h4>Postgraduate Programs (M.E)</h4>
+      <ul>
+        <li>Computer Engineering</li>
+        <li>Information Technology</li>
+        <li>VLSI & Embedded Systems</li>
+      </ul>
+    </div>
+
+    <img src="https://www.pict.edu/images/gallery/lab.jpg" alt="Labs" class="content-img">
+  </div>
+</div>
+
+<!-- Departments -->
+<div data-role="page" id="departments">
+  <div data-role="header">
+    <h1>Departments</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p>Explore our departments that shape future innovators:</p>
+    <ul data-role="listview" data-inset="true">
+      <li><h2>Computer Engineering</h2><p>Focus on software, AI/ML, cybersecurity, and full-stack development.</p></li>
+      <li><h2>Information Technology</h2><p>IT infrastructure, data analytics, cloud computing, and more.</p></li>
+      <li><h2>Electronics & Telecommunication</h2><p>Advanced electronics, IoT, VLSI, and embedded systems.</p></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Contact -->
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact Us</h1>
+    <a href="#home" data-icon="home" data-direction="reverse">Home</a>
+  </div>
+
+  <div role="main" class="ui-content">
+    <p><strong>Address:</strong><br>
+      Pune Institute of Computer Technology,<br>
+      Survey No. 27, Dhankawadi, Pune - 411043<br>
+      Maharashtra, India</p>
+
+    <p><strong>Phone:</strong> +91-20-24371101 / 24371144<br>
+       <strong>Email:</strong> pict@pict.edu</p>
+
+    <p><strong>Website:</strong> <a href="https://www.pict.edu" target="_blank">www.pict.edu</a></p>
+
+    <img src="download.jpg" alt="PICT Front" class="content-img">
+  </div>
+</div>
+
+</body>
+</html>
