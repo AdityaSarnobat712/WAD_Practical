@@ -11,17 +11,16 @@ mongoose.connect('mongodb+srv://Aditya:aditya123@cluster0.6e9xkxv.mongodb.net/?r
 
 // Insert initial data once
 const seedStudents = async () => {
-  const count = await Student.countDocuments();
-  if (count === 0) {
-    await Student.insertMany([
-      { Name: 'Aditya', Roll_No: 111, WAD_Marks: 25, CC_Marks: 25, DSDBA_Marks: 25, CNS_Marks: 25, AI_Marks: 25 },
-      { Name: 'Vedant', Roll_No: 112, WAD_Marks: 18, CC_Marks: 30, DSDBA_Marks: 22, CNS_Marks: 15, AI_Marks: 19 },
-      { Name: 'Sourav', Roll_No: 113, WAD_Marks: 29, CC_Marks: 29, DSDBA_Marks: 28, CNS_Marks: 29, AI_Marks: 30 },
-      { Name: 'Adarsh', Roll_No: 114, WAD_Marks: 12, CC_Marks: 22, DSDBA_Marks: 15, CNS_Marks: 38, AI_Marks: 34 }
-    ]);
-    console.log("Seed data inserted.");
-  }
+  await Student.deleteMany(); 
+  await Student.insertMany([
+    { Name: 'Aditya', Roll_No: 111, WAD_Marks: 25, CC_Marks: 25, DSDBA_Marks: 25, CNS_Marks: 25, AI_Marks: 25 },
+    { Name: 'Vedant', Roll_No: 112, WAD_Marks: 18, CC_Marks: 30, DSDBA_Marks: 22, CNS_Marks: 15, AI_Marks: 19 },
+    { Name: 'Sourav', Roll_No: 113, WAD_Marks: 29, CC_Marks: 29, DSDBA_Marks: 28, CNS_Marks: 29, AI_Marks: 30 },
+    { Name: 'Adarsh', Roll_No: 114, WAD_Marks: 12, CC_Marks: 22, DSDBA_Marks: 15, CNS_Marks: 38, AI_Marks: 34 }
+  ]);
+  console.log("Seed data inserted.");
 };
+
 seedStudents();
 
 // (d) Display all students and total count
