@@ -1,24 +1,24 @@
 const products = [
     {
-      image: 'https://i.imgur.com/kB1GqB8.png',
+      image: 'kB1GqB8.png',
       name: 'Wireless Headphones',
       price: '₹7,999',
       description: 'Noise-cancelling over-ear headphones.'
     },
     {
-      image: 'https://i.imgur.com/x8rZ3Hv.png',
+      image: 'x8rZ3Hv.png',
       name: 'Smartwatch',
       price: '₹12,999',
       description: 'Fitness tracking smartwatch.'
     },
     {
-      image: 'https://i.imgur.com/C97HfZ1.png',
+      image: 'C97HfZ1.png',
       name: 'Gaming Mouse',
       price: '₹2,499',
       description: 'Ergonomic gaming mouse.'
     },
     {
-      image: 'https://i.imgur.com/0nZMg4Z.png',
+      image: '0nZMg4Z.png',
       name: 'Laptop Stand',
       price: '₹1,999',
       description: 'Adjustable aluminium stand.'
